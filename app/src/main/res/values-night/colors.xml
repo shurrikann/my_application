@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--商务风-->
+<!--    <color name="btn_bg">#D4C197</color>-->
+<!--    <color name="btn_text_color">#2C2922</color>-->
+<!--    <color name="background_color">#2C2922</color>-->
+<!--    <color name="text_title">#E5D3AA</color>-->
+<!--    <color name="text_body">#C5B38A</color>-->
+<!--    <color name="text_hint">#7D7055</color>-->
+
+    <!--莫兰迪高级配色-->
+    <color name="btn_bg">#588157</color>
+    <color name="btn_text_color">#E0E0E0</color>
+    <color name="btn_bg_stroke">#404040</color>
+    <color name="btn_text_color_secondary">#B0B0B0</color>
+    <color name="btn_bg_secondary">#3D3D3D</color>
+    <color name="background_color">#1B1D1B</color>
+    <color name="text_title">#E1E8E1</color>
+    <color name="text_body">#AAB2AA</color>
+    <color name="text_hint">#757D75</color>
+    <color name="text_disabled">#4A504A</color>
+    <color name="layout_container_bg">#252825</color>
+    <color name="stroke_color">#2E332E</color>
+    <color name="ic_sun_color">#D1D6D1</color>
+    <color name="ic_moon_color">#D1D6D1</color>
+    <color name="ripples_color">#40FFFFFF</color>
+    <color name="splash_skip_color_bg">#33FFFFFF</color>
+    <color name="splash_skip_color_text">#B0B0B0</color>
+    <color name="splash_color_bg">#1B1D1B</color>
+    <color name="transparent_color">#00000000</color>
+    <color name="snack_color_bg">#2C2C2C</color>
+    <color name="toast_text_color">#FFFFFF</color>
+    <color name="physical_shadow_color">#60000000</color>
+    <color name="countdown_text_color">#E3E8E3</color>
+    <color name="input_background">#1E1E1E</color>
+    <color name="input_stroke">#333333</color>
+    <color name="line_color">#8076A3</color>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_marginEnd="@dimen/margin_10"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_camera"
+            style="@style/AppButton.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_big_h"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/camera" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_location"
+            style="@style/AppButton.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_big_h"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/location" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_mic"
+            style="@style/AppButton.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_big_h"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/microphone" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_callphone"
+            style="@style/AppButton.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_big_h"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/phone_and_contact" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_send_sms"
+            style="@style/AppButton.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_big_h"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/send_sms" />
+
+        <ImageView
+            android:id="@+id/img_preview"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+</LinearLayout>

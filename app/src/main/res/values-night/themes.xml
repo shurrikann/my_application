@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar" >
+        <item name="android:statusBarColor">@color/background_color</item>
+        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+        <item name="android:navigationBarColor">@color/background_color</item>
+        <item name="android:windowLightNavigationBar">?attr/isLightTheme</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+    <style name="Theme.SplashTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/transparent_color</item>
+    </style>
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/background_color</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/icon</item>
+        <item name="windowSplashScreenAnimationDuration">200</item>
+        <item name="postSplashScreenTheme">@style/Theme.MyApplication</item>
+    </style>
+
+    <style name="AppButton" parent="Widget.Material3.Button">
+        <item name="cornerRadius">16dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="AppButton.Primary">
+        <item name="android:stateListAnimator">@animator/btn_physical_press</item>
+        <item name="android:elevation">6dp</item>
+        <item name="backgroundTint">@color/btn_bg</item>
+        <item name="android:textColor">@color/btn_text_color</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AppButton.Secondary">
+        <item name="android:elevation">0dp</item>
+        <item name="strokeWidth">1.2dp</item>
+        <item name="strokeColor">@color/btn_bg_stroke</item>
+        <item name="android:textColor">@color/btn_text_color_secondary</item>
+        <item name="backgroundTint">@color/btn_bg_secondary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="AppButton.skip">
+        <item name="android:stateListAnimator">@animator/btn_physical_press</item>
+        <item name="cornerRadius">100dp</item>
+        <item name="android:elevation">4dp</item>
+        <item name="strokeWidth">1.2dp</item>
+        <item name="strokeColor">@color/btn_bg_stroke</item>
+        <item name="android:textColor">@color/btn_text_color_secondary</item>
+        <item name="backgroundTint">@color/btn_bg_secondary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.Material3.DayNight.Dialog">
+        <item name="android:windowMinWidthMajor">85%</item>
+        <item name="android:windowMinWidthMinor">85%</item>
+    </style>
+
+    <style name="MyEditText">
+        <item name="android:background">@drawable/bg_input_field</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingStart">6dp</item>
+        <item name="android:paddingEnd">6dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textColorHint">?android:attr/textColorSecondary</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+    <style name="MorandiM3EditStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/input_background</item>
+        <item name="boxStrokeColor">@color/input_stroke</item>
+        <item name="boxCornerRadiusTopStart">16dp</item>
+        <item name="boxCornerRadiusTopEnd">16dp</item>
+        <item name="boxCornerRadiusBottomStart">16dp</item>
+        <item name="boxCornerRadiusBottomEnd">16dp</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="hintTextColor">?attr/colorPrimary</item>
+    </style>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvCustomTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/text_title"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <include layout="@layout/input_views" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollContainer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvLayoutContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@color/text_body" />
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConfirmCustom"
+            style="@style/AppButton.Primary"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:visibility="gone"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:text="确定" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancelCustom"
+            style="@style/AppButton.Secondary"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:layout_weight="1"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="15dp"
+            android:visibility="gone"
+            android:text="取消" />
+    </LinearLayout>
+</LinearLayout>

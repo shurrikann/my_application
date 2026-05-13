@@ -3,60 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_color">
+    android:background="@color/background_color"
+    android:orientation="vertical">
 
-    <LinearLayout
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_permissions"
-            style="@style/AppButton.Primary"
+        <androidx.compose.ui.platform.ComposeView
+            android:id="@+id/compress"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/button_big_h"
-            android:layout_marginStart="@dimen/margin_10"
-            android:layout_marginTop="@dimen/margin_10"
-            android:layout_marginEnd="@dimen/margin_10"
-            android:text="@string/permissions" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_callback"
-            style="@style/AppButton.Primary"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/button_big_h"
-            android:layout_marginStart="@dimen/margin_10"
-            android:layout_marginTop="@dimen/margin_10"
-            android:layout_marginEnd="@dimen/margin_10"
-            android:text="@string/intent_callback" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_dialog_material"
-                style="@style/AppButton.Primary"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/button_big_h"
-                android:layout_marginStart="@dimen/margin_10"
-                android:layout_marginTop="@dimen/margin_10"
-                android:layout_marginEnd="@dimen/margin_10"
-                android:layout_weight="1"
-                android:text="@string/system_style_dialog" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_dialog_customization"
-                style="@style/AppButton.Primary"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/button_big_h"
-                android:layout_marginStart="@dimen/margin_10"
-                android:layout_marginTop="@dimen/margin_10"
-                android:layout_marginEnd="@dimen/margin_10"
-                android:layout_weight="1"
-                android:text="@string/customization_style_dialog" />
-        </LinearLayout>
-
-    </LinearLayout>
+            android:layout_height="match_parent" />
+    </androidx.core.widget.NestedScrollView>
 </LinearLayout>
